@@ -10,8 +10,8 @@ import io.cucumber.junit.CucumberOptions;
 		strict = true,
 		dryRun = false,
 		monochrome = true,
-		tags = "",
-		features = "src/main/java/com/newtours/qa/features",
+		plugin = "html:target/cucumber-report.html",
+		features = "src/main/java/com/newtours/qa/features/FlightDetails.feature",
 		glue	= "com/newtours/qa/stepdefinition"
 )
 

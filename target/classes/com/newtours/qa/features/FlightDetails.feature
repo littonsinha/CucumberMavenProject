@@ -2,10 +2,8 @@ Feature:	To enter flight details
 
 Scenario: To enter one way flight details
 
-Given user selects the trip
-And number of passengers
-And departing from
-When month "<month>" and date "<date>" is selected
-And arriving in
-Then preference is Economy class
-When airline is "<Airline>"
+Given user is already on login page
+And username and password are entered
+When user clicks on signin button
+And user creates a trip
+Then user closes the browser
