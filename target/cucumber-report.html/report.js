@@ -1,11 +1,11 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/main/java/com/newtours/qa/features/FlightDetails.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/main/java/com/newtours/qa/features/Login.feature");
 formatter.feature({
-  "name": "To enter flight details",
+  "name": "Demo Tours Test",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "To enter one way flight details",
+  "name": "Demo Tours Login with valid credentials",
   "description": "",
   "keyword": "Scenario"
 });
@@ -35,26 +35,6 @@ formatter.step({
 });
 formatter.match({
   "location": "com.newtours.qa.stepdefinition.Login.user_clicks_on_signin_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user creates a trip",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.newtours.qa.stepdefinition.Login.user_creates_a_trip()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user closes the browser",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.newtours.qa.stepdefinition.Login.user_closes_the_browser()"
 });
 formatter.result({
   "status": "passed"

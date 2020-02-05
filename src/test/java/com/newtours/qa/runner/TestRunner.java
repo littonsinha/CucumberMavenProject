@@ -10,8 +10,9 @@ import io.cucumber.junit.CucumberOptions;
 		strict = true,
 		dryRun = false,
 		monochrome = true,
+		//tags = "@SmokeTest",
 		plugin = "html:target/cucumber-report.html",
-		features = "src/main/java/com/newtours/qa/features/FlightDetails.feature",
+		features = "src/main/java/com/newtours/qa/features/Login.feature",
 		glue	= "com/newtours/qa/stepdefinition"
 )
 
